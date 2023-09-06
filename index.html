@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Fontawesome  -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <!-- AOS CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Title  -->
+        <title>Dashboard</title>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50 ">
+        <!-- START: Navbar -->
+        <nav class="nav navbar fixed-top navbar-expand-lg p-md-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand text-light">Program Crud</a>
+                <button type="button" class="navbar-toggler navbar-dark" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mt-1" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#home">home</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="crud/read.php">Tampilkan</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="crud/add.php">Tambah</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END:Navbar -->
+
+        <!-- START:Hero -->
+        <div id="home" class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="content">
+                    <h1 class="text-white text-center" data-aos="zoom-out" data-aos-duration="1000">
+                        Program Crud <br />
+                        Menginput Data Obat
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- END:Hero -->
+
+        <!-- START:About -->
+        <section id="about">
+            <div class="container px-sm-0 px-lg-7 py-4 mt-3">
+                <div class="row">
+                    <div class="col-lg-4 col-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800">
+                        <img class="w-100" src="https://cdn.discordapp.com/attachments/999652295836962816/1146403394316152864/SourcodePHP.jpg" alt="saya seorang front-end develeoper" />
+                    </div>
+
+                    <div class="content col-lg-8 col-12 mt-4 mt-lg-0 align-self-center aos-init aos-animate" data-aos="fade-left" data-aos-offset="400" data-aos-duration="800 ">
+                        <span>Tentang CRUD</span>
+                        <h2>Pengertian Crud</h2>
+                        <p>
+                            Crud singkatan dari proses Create, Read, Update, dan Delete digunakan untuk mengelola data pada sistem atau aplikasi pengolah data. Ini biasanya digunakan dalam sistem informasi, aplikasi web, atau aplikasi
+                            mobile untuk mengatur interaksi dengan database.
+                        </p>
+                        <p>Empat poin tersebut mengindikasikan bahwa fungsi utama melekat pada penggunaan database relasional beserta aplikasi yang mengelolanya, seperti Oracle, MySQL, SQL Server, dan lain - lain.</p>
+
+                        <div class="crud-title">
+                            <h3>C R U D</h3>
+                            <div class="crud">
+                                <li><i class="fas fa-pencil-alt px-2"></i>Create</li>
+                                <li><i class="fas fa-book px-2"></i>Read</li>
+                                <li><i class="fas fa-sync px-2"></i>Update</li>
+                                <li><i class="fas fa-trash px-2"></i>Delete</li>
+                            </div>
+                        </div>
+                        <br />
+                        <div data-aos="fade-left" data-aos-offset="400" data-aos-duration="800 ">
+                            <h2>Fungsi Crud</h2>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <strong> Create (Buat):</strong> Tahap pertama dalam proses CRUD adalah membuat data baru. Dalam tahap ini, data baru diinputkan ke dalam sistem atau aplikasi pengolah data. Data ini kemudian disimpan
+                                        dalam database dengan mengisi nilai-nilai yang sesuai untuk setiap kolom atau atribut.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Read (Baca):</strong> Pada tahap ini, sistem atau aplikasi membaca data yang ada dalam database. Data dapat diambil dan ditampilkan kepada pengguna atau digunakan untuk berbagai tujuan. Ini
+                                        melibatkan membaca data dari satu atau beberapa tabel dalam database.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Update (Perbarui):</strong> Tahap update melibatkan mengubah data yang sudah ada dalam database. Pengguna atau sistem dapat memperbarui nilai-nilai yang ada dalam record atau baris data
+                                        tertentu. Ini diperlukan ketika ada perubahan atau koreksi yang perlu diaplikasikan pada data yang ada.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Delete (Hapus):</strong> Tahap terakhir adalah menghapus data dari database. Jika data tidak diperlukan lagi atau sudah usang, pengguna atau sistem dapat menghapusnya. Hapus ini biasanya
+                                        bersifat permanen, dan data yang dihapus tidak dapat dipulihkan kecuali ada proses pemulihan khusus yang diterapkan.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END:About -->
+
+        <!-- START:Footer -->
+        <footer class="text-center">
+            <span>Code by Lukman</span>
+        </footer>
+        <!-- END:Footer -->
+
+        <!-- Javascript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                durattion: 600,
+                easing: "ease",
+            });
+        </script>
+        <script src="js/navbar.js"></script>
+
+        <!--Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

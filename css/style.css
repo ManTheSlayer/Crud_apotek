@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Variable */
+:root {
+    /* Variable Color */
+    --primary: #70c533;
+    --secondary: #939393;
+    --black: #26312b;
+
+    /* Dark */
+    --primary-dark: #3b661d;
+
+    /* Variable Ketebalan Font */
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}
+/* button Custom */
+.btn-primary {
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 24px;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: var(--primary-dark);
+    border: none;
+}
+
+/* Style Body */
+html {
+    behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    position: relative;
+}
+section {
+    padding: 64px 0;
+    overflow: hidden;
+}
+
+/* navbar */
+.navbar-nav {
+    background-color: none;
+    border-radius: 16px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Hero/banner */
+.banner-image {
+    background-image: url(https://cdn.discordapp.com/attachments/999652295836962816/1146335052985286656/guerrillabuzz-3TU34jaW88k-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(20, 20, 20, 0.493);
+}
+
+/* About*/
+#about img {
+    border-radius: 0 50px 0 50px;
+}
+
+#about .content span {
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+#about .content h2 {
+    color: var(--black);
+    font-size: 38px;
+    font-weight: var(--font-weight-semibold);
+}
+#about .content p {
+    color: var(--black);
+    line-height: 28px;
+    margin-top: 16px;
+    text-align: justify;
+}
+#about .crud-title h3 {
+    font-size: 24px;
+    font-weight: var(--font-weight-medium);
+}
+#about .crud li {
+    list-style: none;
+    font-size: 18px;
+}
+#about .crud li i {
+    color: var(--primary);
+}
+
+#about .crud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer {
+    background-color: rgb(138, 148, 128);
+    padding: 20px 0;
+}
+footer span {
+    color: white;
+    font-weight: var(--font-weight-semibold);
+}
+/****** Mobile Version ******/
+@media (max-width: 990px) {
+    .navbar-nav {
+        background-color: #212529 !important;
+    }
+
+    #about .content h2 {
+        font-size: 28px;
+    }
+}
